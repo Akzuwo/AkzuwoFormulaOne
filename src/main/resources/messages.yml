@@ -2,3 +2,8 @@ prefix: "&c[F1]&r "
 errors:
   no-permission: "&cDazu hast du keine Berechtigung."
   player-only: "&cDieser Command kann nur als Spieler ausgeführt werden."
+points:
+  rewarded: "&aDu hast &e%points% Punkte &afür dieses Rennen erhalten."
+  skipped-cooldown: "&7Du hast für diese Strecke gerade erst Punkte erhalten."
+  skipped-disabled: "&7Für dieses Rennen wurden keine Punkte vergeben."
+  api-unavailable: "&cPunkte konnten nicht vergeben werden, weil das Punktesystem nicht erreichbar ist."

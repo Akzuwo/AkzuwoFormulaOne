@@ -1,71 +1,80 @@
-name: FormulaBoatRacing
+name: AkzuwoFormulaOne
 version: '${project.version}'
-main: ch.akzuwo.formulaboatracing.FormulaBoatRacingPlugin
+main: ch.akzuwo.akzuwoformulaone.AkzuwoFormulaOnePlugin
 api-version: '1.21'
 author: Akzuwo
 description: Formula 1 style boat racing system with custom physics and track management.
 softdepend:
   - Multiverse-Core
+  - RankPointsAPI
 
 commands:
   f1:
-    description: FormulaBoatRacing user commands.
+    description: AkzuwoFormulaOne user commands.
     usage: /f1
-    permission: formulaboat.user
+    permission: akzuwoformulaone.user
   f1builder:
-    description: FormulaBoatRacing track builder commands.
+    description: AkzuwoFormulaOne track builder commands.
     usage: /f1builder
-    permission: formulaboat.builder
+    permission: akzuwoformulaone.builder
   f1mod:
-    description: FormulaBoatRacing moderation commands.
+    description: AkzuwoFormulaOne moderation commands.
     usage: /f1mod
-    permission: formulaboat.mod
+    permission: akzuwoformulaone.mod
   f1admin:
-    description: FormulaBoatRacing administration commands.
+    description: AkzuwoFormulaOne administration commands.
     usage: /f1admin
-    permission: formulaboat.admin
+    permission: akzuwoformulaone.admin
 
 permissions:
-  formulaboat.user:
+  akzuwoformulaone.user:
     description: Allows use of /f1.
     default: true
-  formulaboat.user.join:
+  akzuwoformulaone.user.join:
     default: true
-  formulaboat.user.leave:
+  akzuwoformulaone.user.leave:
     default: true
-  formulaboat.user.start:
+  akzuwoformulaone.user.start:
     default: true
-  formulaboat.user.leaderboard:
+  akzuwoformulaone.user.leaderboard:
     default: true
-  formulaboat.mod:
+  akzuwoformulaone.mod:
     default: op
-  formulaboat.mod.cancel:
+  akzuwoformulaone.mod.cancel:
     default: op
-  formulaboat.mod.kick:
+  akzuwoformulaone.mod.kick:
     default: op
-  formulaboat.mod.tp:
+  akzuwoformulaone.mod.tp:
     default: op
-  formulaboat.mod.info:
+  akzuwoformulaone.mod.info:
     default: op
-  formulaboat.admin:
+  akzuwoformulaone.admin:
     default: op
-  formulaboat.admin.reload:
+  akzuwoformulaone.admin.reload:
     default: op
-  formulaboat.admin.debug:
+  akzuwoformulaone.admin.debug:
     default: op
-  formulaboat.admin.resourcepack:
+  akzuwoformulaone.admin.resourcepack:
     default: op
-  formulaboat.admin.physics:
+  akzuwoformulaone.admin.physics:
     default: op
-  formulaboat.builder:
+  formulaboat.admin.analytics:
     default: op
-  formulaboat.builder.create:
+  formulaboat.admin.analytics.testcrash:
     default: op
-  formulaboat.builder.edit:
+  formulaboat.admin.points:
     default: op
-  formulaboat.builder.checkpoint:
+  formulaboat.admin.points.test:
     default: op
-  formulaboat.builder.save:
+  akzuwoformulaone.builder:
     default: op
-  formulaboat.builder.enable:
+  akzuwoformulaone.builder.create:
+    default: op
+  akzuwoformulaone.builder.edit:
+    default: op
+  akzuwoformulaone.builder.checkpoint:
+    default: op
+  akzuwoformulaone.builder.save:
+    default: op
+  akzuwoformulaone.builder.enable:
     default: op

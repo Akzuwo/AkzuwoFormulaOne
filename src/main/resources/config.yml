@@ -1,17 +1,39 @@
+features:
+  test-mode: true
+  resourcepack-enabled: false
+  force-resourcepack: false
+  custom-model-enabled: false
+  sounds-enabled: false
+  vanilla-fallback: true
+
 resourcepack:
-  enabled: true
-  url: "https://example.com/formulaboat-resourcepack.zip"
-  sha1: "PLACEHOLDER_SHA1"
-  force: true
-  kick-message: "Du musst das Resourcepack akzeptieren, um auf diesem Server zu spielen."
+  url: ""
+  sha1: ""
+  kick-on-decline: false
+  kick-message: "Du musst das Resourcepack akzeptieren, um Formel-1-Rennen zu fahren."
+
+custom-model:
+  enabled: false
+  display-mode: "NONE"
+  item-material: "CARROT_ON_A_STICK"
+  custom-model-data: 1001
+  hide-vanilla-boat: false
+
+sounds:
+  enabled: false
+  use-vanilla-fallback-sounds: true
+  countdown-sound: "BLOCK_NOTE_BLOCK_PLING"
+  start-sound: "ENTITY_PLAYER_LEVELUP"
+  checkpoint-sound: "BLOCK_NOTE_BLOCK_BELL"
+  finish-sound: "UI_TOAST_CHALLENGE_COMPLETE"
 
 physics:
   enabled: true
-  max-speed: 1.2
-  acceleration-multiplier: 1.08
+  max-speed: 1.20
+  acceleration-multiplier: 1.05
   drift-reduction: 0.55
-  steering-assist: 0.35
-  off-track-slowdown: 0.45
+  steering-assist: 0.30
+  countdown-brake: 0.15
 
 race:
   countdown-seconds: 5
@@ -20,8 +42,50 @@ race:
   allow-time-trial: true
   allow-multiplayer: true
   remove-boat-after-race: true
+  teleport-to-lobby-after-race: true
 
 storage:
   type: "yaml"
+
+rank-points:
+  enabled: true
+  debug: false
+  rewards:
+    enabled: true
+    finish-race-base-points: 10
+    personal-best-bonus-points: 5
+    track-record-bonus-points: 15
+    reward-cancelled-races: false
+    require-valid-checkpoints: true
+    cooldown:
+      enabled: true
+      seconds: 120
+  track-multipliers:
+    default: 1.0
+    tracks:
+      testtrack: 1.0
+      monaco: 1.5
+      difficult_track: 2.0
+
+analytics:
+  send-analytics-data: true
+  official-endpoint-info: "https://analytics.akzuwo.ch/api/reports"
+  timeout-ms: 3000
+  log-success: false
+  crash-reporting:
+    enabled: true
+    include-stacktrace: true
+    include-recent-plugin-logs: true
+    recent-log-limit: 200
+    rate-limit-seconds: 60
+    max-stacktrace-length: 12000
+  custom-copy-endpoint:
+    enabled: false
+    url: ""
+    timeout-ms: 3000
+  local-copy:
+    enabled: false
+    folder: "analytics"
+    pretty-print: true
 
 debug: false
