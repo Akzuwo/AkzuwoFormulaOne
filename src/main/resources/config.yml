@@ -1,0 +1,27 @@
+resourcepack:
+  enabled: true
+  url: "https://example.com/formulaboat-resourcepack.zip"
+  sha1: "PLACEHOLDER_SHA1"
+  force: true
+  kick-message: "Du musst das Resourcepack akzeptieren, um auf diesem Server zu spielen."
+
+physics:
+  enabled: true
+  max-speed: 1.2
+  acceleration-multiplier: 1.08
+  drift-reduction: 0.55
+  steering-assist: 0.35
+  off-track-slowdown: 0.45
+
+race:
+  countdown-seconds: 5
+  default-laps: 3
+  finish-radius: 5.0
+  allow-time-trial: true
+  allow-multiplayer: true
+  remove-boat-after-race: true
+
+storage:
+  type: "yaml"
+
+debug: false
