@@ -1,0 +1,69 @@
+Akzuwo Source-Available Non-Commercial License
+Version 1.0
+
+Copyright (c) 2026 Timo Wigger.
+All rights reserved except as expressly stated in this license.
+
+1. Permission for non-commercial use
+
+You are allowed to view, download, run, and modify this software for
+personal, educational, testing, research, and other non-commercial purposes.
+
+2. No commercial use
+
+You may not use this software, or any part of it, for commercial purposes
+without prior written permission from the copyright holder.
+
+Commercial purposes include, but are not limited to:
+- selling the software or modified versions of it;
+- offering paid services based on this software;
+- using this software in paid products, paid platforms, SaaS products,
+  client work, or business operations;
+- monetizing this software or derivative works through ads, subscriptions,
+  donations tied to access, paid hosting, or similar methods.
+
+3. Modifications
+
+You may modify the software for your own non-commercial use.
+
+You may not publish, distribute, sublicense, share, or otherwise make
+available modified versions, forks, or derivative works based on this
+software without prior written permission from the copyright holder.
+
+4. Contributions
+
+The preferred way to contribute changes is by submitting a Pull Request
+to the original repository.
+
+By submitting a Pull Request, you agree that your contribution may be
+included in the original project under this license.
+
+Accepted contributions will be credited in an appropriate place, such as
+the README, changelog, contributors list, or release notes.
+
+Submitting a Pull Request does not guarantee that the contribution will
+be accepted.
+
+5. Attribution and notices
+
+You may not remove or alter copyright notices, license texts, author
+credits, or other legal notices included in this project.
+
+6. No relicensing
+
+You may not relicense this software, or any derivative work based on it,
+under another license without prior written permission from the copyright
+holder.
+
+7. No warranty
+
+This software is provided "as is", without warranty of any kind.
+The copyright holder is not liable for any damages, issues, data loss,
+or other consequences arising from the use of this software.
+
+8. Commercial licensing and permissions
+
+For commercial licensing, permission to publish modified versions, or
+other licensing questions, contact:
+
+timowigger8@gmail.com

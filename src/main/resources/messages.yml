@@ -1,0 +1,4 @@
+prefix: "&c[F1]&r "
+errors:
+  no-permission: "&cDazu hast du keine Berechtigung."
+  player-only: "&cDieser Command kann nur als Spieler ausgeführt werden."

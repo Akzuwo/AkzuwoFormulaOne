@@ -1,0 +1,71 @@
+name: FormulaBoatRacing
+version: '${project.version}'
+main: ch.akzuwo.formulaboatracing.FormulaBoatRacingPlugin
+api-version: '1.21'
+author: Akzuwo
+description: Formula 1 style boat racing system with custom physics and track management.
+softdepend:
+  - Multiverse-Core
+
+commands:
+  f1:
+    description: FormulaBoatRacing user commands.
+    usage: /f1
+    permission: formulaboat.user
+  f1builder:
+    description: FormulaBoatRacing track builder commands.
+    usage: /f1builder
+    permission: formulaboat.builder
+  f1mod:
+    description: FormulaBoatRacing moderation commands.
+    usage: /f1mod
+    permission: formulaboat.mod
+  f1admin:
+    description: FormulaBoatRacing administration commands.
+    usage: /f1admin
+    permission: formulaboat.admin
+
+permissions:
+  formulaboat.user:
+    description: Allows use of /f1.
+    default: true
+  formulaboat.user.join:
+    default: true
+  formulaboat.user.leave:
+    default: true
+  formulaboat.user.start:
+    default: true
+  formulaboat.user.leaderboard:
+    default: true
+  formulaboat.mod:
+    default: op
+  formulaboat.mod.cancel:
+    default: op
+  formulaboat.mod.kick:
+    default: op
+  formulaboat.mod.tp:
+    default: op
+  formulaboat.mod.info:
+    default: op
+  formulaboat.admin:
+    default: op
+  formulaboat.admin.reload:
+    default: op
+  formulaboat.admin.debug:
+    default: op
+  formulaboat.admin.resourcepack:
+    default: op
+  formulaboat.admin.physics:
+    default: op
+  formulaboat.builder:
+    default: op
+  formulaboat.builder.create:
+    default: op
+  formulaboat.builder.edit:
+    default: op
+  formulaboat.builder.checkpoint:
+    default: op
+  formulaboat.builder.save:
+    default: op
+  formulaboat.builder.enable:
+    default: op
